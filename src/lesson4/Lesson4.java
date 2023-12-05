@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
-package exercise;
+package lesson4;
 
 /**
  *
@@ -14,11 +14,19 @@ public class Lesson4 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-          String greet1 = "Hello";
-          String greet2 = "World";
-          String message = greet1 + " " + greet2 + "!";
-          String message2 = greet1 + " " + greet2 + " " + 2014 + "!";
-          System.out.println(message2);
+//            String name1 = "Harry";
+//            String name = name1;
+//            double price = 12.35;
+//            boolean outOfStock = true;
+//            int quantity = 5;
+//            double total = price * quantity;
+//            System.out.println(name);
+            
+//          String greet1 = "Hello";
+//          String greet2 = "World";
+//          String message = greet1 + " " + greet2 + "!";
+//          String message2 = greet1 + " " + greet2 + " " + 2014 + "!";
+//          System.out.println(message2);
           
 //        double quot, num1;
 //        num1= 31;

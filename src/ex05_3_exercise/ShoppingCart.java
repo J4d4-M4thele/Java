@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package ex05_1_exercise;
+package ex05_3_exercise;
 
 /**
  *
@@ -21,25 +21,21 @@ public class ShoppingCart {
         boolean outOfStock = false;
         double price = 9.99, tax = 0.15, total;
         int quantity = item.length;
-        
         total = (price + tax) * quantity;
-        //messages
-        String message;
-         message = custName + " wants to purchase " + quantity + " items. The second item is " + item[1];
-         
+        String message = "Items purchased: ";
+        //
         if(outOfStock == true) {
         message = "Sorry but this item is out of stock";
         }
-
         System.out.println(message);
- 
+        //message
+        for(String items: item) {
+        System.out.println(items);
+        }
     }
 }
-//Exercise 5-2
+//Exercise 5-3
 //
-//1. Declare a String array and initialize it with 4 elements.
-//     Each element represents a different item description ("Shirt", for instance).
-//2. Change message to show how many items the customer wants to purchase 
-//     (Use the length property of the items array).
-//3. Print just one element of the items array.  
-//     What happens if you use index number 4?
+//1. Create a for loop that iterates through the items array,
+//     displaying each element. Precede the list of elements with 
+//     the message, "Items purchased: ".

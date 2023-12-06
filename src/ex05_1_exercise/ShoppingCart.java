@@ -15,7 +15,7 @@ public class ShoppingCart {
         
         boolean outOfStock = false;
         double price = 9.99, tax = 0.15, total;
-        int quantity = 2;
+        int quantity = 1;
         
         total = (price + tax) * quantity;
         String message;

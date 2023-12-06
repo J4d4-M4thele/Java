@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package ex05_1_exercise;
+package ex05_2_exercise;
 
 /**
  *
@@ -25,7 +25,7 @@ public class ShoppingCart {
         total = (price + tax) * quantity;
         //messages
         String message;
-         message = custName + " wants to purchase " + quantity + " items. The second item is " + item[1];
+         message = custName + " wants to purchase " + quantity + " items. The third item is " + item[2];
          
         if(outOfStock == true) {
         message = "Sorry but this item is out of stock";

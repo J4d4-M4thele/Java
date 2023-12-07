@@ -12,19 +12,44 @@ import ex08_1_exercise.*;
  */
 public class Item {
 
-    char colour;
+    public String descr;
+    public int quantity;
+    public double price;
+    public char colour = 'U';
 
-    public boolean setColour(char colourCode) {
-        if (colourCode == ' ') {
-            return false;
+    public void displayItem() {
+        System.out.println("Item: " + descr);
+        System.out.println("Quantity: " + quantity);
+        System.out.println("Price: " + price);
+        System.out.println("Colour: " + colour);
+
+    }
+
+    //3-arg setItemFields
+    public void setItemFields(String descr, int quantity, double price) {
+        this.descr = descr;
+        this.quantity = quantity;
+        this.price = price;
+    }
+
+    //4-arg setItemFields
+    //overloaded setItemFields method
+    public int setItemFields(String descr, int quantity, double price, char col) {
+        if (col != ' ') {
+            colour = col;
+            setItemFields(descr, quantity, price);
+            return 1;
         } else {
-            return true;
+            return -1;
         }
     }
 }
 //In the Item class:
-//1. Declare a setColor method that takes a char as an argument (a color code)
-//     and returns a boolean.
-//     Return false if the colorCode is ' '.
-//     Otherwise, assign the colorCode to the color field and return true.
-//
+//1. Write a setItemFields method that takes 3 args and assigns them 
+//     to desc, quantity, and price fields.  The method returns void. 
+//2. Write an overloaded setItemFields method that takes 4 args and 
+//     returns an int.  The method assigns all 4 fields.  Invalid value for 
+//     the colorCode arg is ' ' (a single space)
+//   If the colorCode arg is invalid, return -1 without assigning the value.
+//   If the colorCode is valid, assign the colorCode field and then assign 
+//     the remaining fields by calling the 3 arg method.

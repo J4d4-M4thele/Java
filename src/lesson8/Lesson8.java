@@ -22,11 +22,14 @@ public class Lesson8 {
 //        int num1 = 1, num2 = 2;
 //        int result = num1 + num2;
 //        System.out.println(result);
+
         int num1 = 1, num2 = 2;
         int result = sum(num1, num2);
         System.out.println(result);
     }
     //static keyword allows us to access method without creating an instance of object
+    //w/o static we'll need to create an instance
+    //used when objects have shared values
     public static int sum(int x, int y) {
         return (x + y);
     }

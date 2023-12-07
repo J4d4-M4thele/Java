@@ -27,9 +27,38 @@ public class Lesson7 {
 //        
 //        int idx2 = phoneNum.indexOf("-", idx1 + 1);
 //        System.out.println("Index of second dash: " + idx2);
-        StringBuilder mySB = new StringBuilder("Hello");
-        mySB.append(" World");
+//        StringBuilder mySB = new StringBuilder("Hello");
+//        mySB.append(" World");
+//
+//        System.out.println(mySB);
+//        int count = 15;
+//        int a, b, c, d;
+//        //poincrement
+//        a = count++;
+//        b = count;
+//        //preincrement
+//        c = ++count;
+//        d = count;
+//        
+//        System.out.println(a + ", " + b + ", " + c + ", " + d);
+//    short a, b, c;
+//    a = 1;
+//    b = 2;
+//    c = (short) (a + b);
+        Person person1 = new Person();
+        person1.calcAge();
+    }
+}
 
-        System.out.println(mySB);
+class Person {
+
+    int ageYears = 19;
+
+    public void calcAge() {
+        int ageDays = ageYears * 365;
+        long ageSeconds = ageYears * 365 * 24L * 60 * 60;
+
+        System.out.println("You are " + ageDays + " days old!");
+        System.out.println("You are " + ageSeconds + " seconds old!");
     }
 }

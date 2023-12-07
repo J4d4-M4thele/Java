@@ -23,18 +23,6 @@ public class ShoppingCart {
     }
 }
 
-class Item {
-
-    public int itemID;
-    public String desc;
-    public double price;
-    public int quantity;
-    
-    public void displayItem() {
-        System.out.println(desc);
-    }
-}
-
 //Exercise 6-2
 //
 //In the ShoppingCart class:

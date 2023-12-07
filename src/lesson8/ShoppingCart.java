@@ -16,15 +16,22 @@ public class ShoppingCart {
 //        myShirt.display();
 //        yourShirt.display();
 
-        Shirt shirt01 = new Shirt("Sailor", "Blue", 30);
-        Shirt shirt02 = new Shirt("Sweatshirt", "Green", 25);
-        Shirt shirt03 = new Shirt("Skull", "Blue", 15);
-        Shirt shirt04 = new Shirt("Tee", "Red", 50);
-        
-        shirt01.display();
-        shirt02.display();
-        shirt03.display();
-        shirt04.display();
+//        Shirt shirt01 = new Shirt("Sailor", "Blue", 30);
+//        Shirt shirt02 = new Shirt("Sweatshirt", "Green", 25);
+//        Shirt shirt03 = new Shirt("Skull", "Blue", 15);
+//        Shirt shirt04 = new Shirt("Tee", "Red", 50);
+        Shirt myShirt = new Shirt();
+        System.out.println("Shirt Colour: " + myShirt.colourCode);
+        changeShirtColour(myShirt, 'B');
+        System.out.println("Shirt Colour: " + myShirt.colourCode);
+//        shirt01.display();
+//        shirt02.display();
+//        shirt03.display();
+//        shirt04.display();
+    }
+     public static void changeShirtColour(Shirt theShirt, char colour) {
+        //theShirt = new Shirt();
+        theShirt.colourCode = colour;
     }
 }
 
@@ -59,6 +66,7 @@ class Shirt {
         setFields(desc, price);
         setColour(colour);
     }
+
     public void display() {
         System.out.println("Item description: " + desc);
         System.out.println("Colour Code: " + colourCode);

@@ -15,6 +15,7 @@ public class ShoppingCart {
         Item item1 = new Item();
         item1.setItemFields("Anime Tee", 1, 9.99);
         item1.displayItem();
+        
         Item item2 = new Item();
         int val = item2.setItemFields("Purse", 2, 54.99 , ' ');
         if(val < 0) {

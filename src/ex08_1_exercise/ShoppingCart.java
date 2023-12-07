@@ -11,8 +11,8 @@ package ex08_1_exercise;
 public class ShoppingCart {
     public static void main(String[] args) {
         Item item1 = new Item();
-        item1.colour = 'B';
-        if(item1.setColour('B')) {
+        item1.colour = ' ';
+        if(item1.setColour(' ')) {
             System.out.println("Item colour is: " + item1.colour);
         }else {
             System.out.println("Invalid colour!");

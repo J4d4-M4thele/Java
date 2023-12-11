@@ -25,14 +25,16 @@ public class Lesson11 {
 //        JapaneseDate jDate = JapaneseDate.from(myDate);
 //        System.out.println("Today's date in Japan is " + jDate);
         
-        LocalDate today = LocalDate.now();
-        System.out.println("Today's date (without formatting) is " + today);
-        
-        String sdate = today.format(DateTimeFormatter.ISO_DATE_TIME);
-        System.out.println("Today's date (in ISO_DATE_TIME format) is " + sdate);
-        
-        String fdate = today.format(DateTimeFormatter.ofLocalizedDate(FormatStyle.MEDIUM));
-        System.out.println("Today's date (in Medium Localized format) is " + fdate);
+//        LocalDate today = LocalDate.now();
+//        System.out.println("Today's date (without formatting) is " + today);
+//        
+//        String sdate = today.format(DateTimeFormatter.ISO_DATE_TIME);
+//        System.out.println("Today's date (in ISO_DATE_TIME format) is " + sdate);
+//        
+//        String fdate = today.format(DateTimeFormatter.ofLocalizedDate(FormatStyle.MEDIUM));
+//        System.out.println("Today's date (in Medium Localized format) is " + fdate);
+
+
 
 //        int sales[][] = new int[3][4];
 //        int[][] salesArray = initArray(sales);

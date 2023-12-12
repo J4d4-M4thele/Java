@@ -4,7 +4,9 @@
  */
 package lesson13;
 
-import lesson12.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 /**
  *
@@ -21,12 +23,44 @@ public class TestLesson13 {
 //        System.out.println(shirt01);
 //        System.out.println();
 //        System.out.println(trouser01);
-        Trouser t1 = new Trouser();
-        Clothing c1 = new Trouser();
-        Returnable r1 = new Trouser();
+//        Trouser t1 = new Trouser();
+//        Clothing c1 = new Trouser();
+//        Returnable r1 = new Trouser();
+//        
+//        t1.display();
+//        t1.doReturn();
+//        t1.getFit();
+//
+//        c1.getDesc();
+//        c1.getItemID();
+//
+//        r1.doReturn();
+//        
+//        if(c1 instanceof Trouser) {
+//        char fit = ((Trouser)c1).getFit();
+//            System.out.println("These pants are size: " + fit);
+//        }
+
+//        String[] nums = {"One", "Two", "Three"};
+//        //array -----> List
+//        List<String> myList = Arrays.asList(nums);
+//        //List ----> ArrayList
+//        ArrayList<String> myArrayList = new ArrayList(Arrays.asList(nums));
+    
+    String[] names = {"Ned", "Fred", "Rick", "Alice", "Jessie"};
+    List<String> namesList = new ArrayList(Arrays.asList(names));
+    
+    for(String n: namesList) {
+        System.out.println(n.toUpperCase() + ", ");
+    }
+        System.out.println("After for loop: " + namesList);
+        //unary lambda
+        namesList.replaceAll(n -> n.toUpperCase());
+        System.out.println("List.replaceAll lambda: " + namesList);
         
-        t1.display();
-        c1.getDesc();
-        r1.doReturn();
+        namesList.removeIf(n -> n.equalsIgnoreCase("Rick"));
+        System.out.println("Predicate Lambda (Removes Rick): " + namesList);
+        namesList.removeIf(n -> n.length() < 5);
+        System.out.println("Predicate Lambda (removes if name capacity is less than 5): " + namesList);
     }
 }

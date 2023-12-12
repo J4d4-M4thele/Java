@@ -53,4 +53,8 @@ public class Shirt extends Clothing {
 //            "\nFit: " + fit);
     return ("This shirt is size " + fit + " that costs R" + getPrice() +".");
     }
+    
+    public String doReturn() {
+    return "Shirt returns must be within 3 days.";
+    }
 }

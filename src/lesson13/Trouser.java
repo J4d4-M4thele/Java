@@ -10,7 +10,7 @@ import lesson12.*;
  *
  * @author Jada
  */
-public class Trouser extends Clothing {
+public class Trouser extends Clothing implements Returnable {
     private char fit;
     private char gender;
     
@@ -18,6 +18,12 @@ public class Trouser extends Clothing {
     super(itemID,desc,colourCode,price);
     this.fit = fit;
     this.gender = gender;
+    }
+    
+    public Trouser() {
+    super(1, "Pants", 'R', 0.0);
+    this.fit = 'L';
+    this.gender = 'M';
     }
     
     public char getFit() {
@@ -49,5 +55,10 @@ public class Trouser extends Clothing {
     public String toString() {
     return ("\nItemID: " + getItemID() + "\nPrice: " + getPrice() + "\nColour Code: " + getColourCode() +
             "\nFit: " + fit + "\nGender: " + gender);
+    //("These slacks are beige" + );
+    }
+    
+    public String doReturn() {
+    return "Trouser returns must be within 3 days.";
     }
 }

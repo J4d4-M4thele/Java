@@ -13,7 +13,7 @@ public class Trouser extends Clothing {
     private char gender;
     
     public Trouser(int itemID, String desc, char colourCode, double price, char fit, char gender) {
-    super(itemID, desc, colourCode, price);
+    super(itemID,desc,colourCode,price);
     this.fit = fit;
     this.gender = gender;
     }
@@ -32,5 +32,14 @@ public class Trouser extends Clothing {
 
     public void setGender(char gender) {
         this.gender = gender;
+    }
+    
+    public void display() {
+    System.out.println("ItemID: " + getItemID());
+        System.out.println("Item Description: " + getDesc());
+        System.out.println("Price: " + getPrice());
+        System.out.println("Colour Code: " + getColourCode());
+        System.out.println("Fit: " + fit);
+        System.out.println("Gender: " + gender);
     }
 }

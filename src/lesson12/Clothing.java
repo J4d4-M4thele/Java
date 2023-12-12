@@ -8,7 +8,7 @@ package lesson12;
  *
  * @author Jada
  */
-public class Clothing {
+public abstract class Clothing {
 
     private int itemID = 0;
     private String desc = "-description required-";
@@ -54,10 +54,5 @@ public class Clothing {
         this.price = price;
     }
     
-    public void display() {
-        System.out.println("ItemID: " + getItemID());
-        System.out.println("Item Description: " + getDesc());
-        System.out.println("Price: " + getPrice());
-        System.out.println("Colour Code: " + getColourCode());
-    }
+    public abstract void display();
 }

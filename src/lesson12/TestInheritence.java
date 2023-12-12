@@ -18,11 +18,11 @@ public class TestInheritence {
         trouser01.getItemID();
         trouser01.display();
         //must cast as trouser because it's a clothing instance
-        ((Trouser)trouser01).getFit();
-        if(trouser01 instanceof Trouser) {
-        char fitcode = ((Trouser)trouser01).getFit();
-            System.out.println("Fit: " + fitcode);
-        }
+//        ((Trouser)trouser01).getFit();
+//        if(trouser01 instanceof Trouser) {
+//        char fitcode = ((Trouser)trouser01).getFit();
+//            System.out.println("Fit: " + fitcode);
+//        }
     }
  
 }

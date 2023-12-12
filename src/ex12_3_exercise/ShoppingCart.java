@@ -1,12 +1,20 @@
 package ex12_3_exercise;
 
 public class ShoppingCart {
+
     public static void main(String[] args) {
-         // declare and instantiate a Shirt object using an Item reference type
-        
+        // declare and instantiate a Shirt object using an Item reference type
+        //Item newShirt = new Shirt(19.99, 'M', 'R');
+        Item newShirt = new Item();
         
         // call the display method on the object, then the getColor method
-
+        newShirt.display();
+        if(newShirt instanceof Shirt) {
+        String colorCode = ((Shirt)newShirt).getColor();
+            System.out.println("\tColour : " + colorCode);
+        }else{
+            System.out.println("Not an instance of Shirt");
+        }
     }
 }
 //In the ShoppingCart class:

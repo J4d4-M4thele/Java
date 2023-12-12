@@ -8,34 +8,28 @@ package lesson12;
  *
  * @author Jada
  */
-public class Trouser {
+public class Trouser extends Clothing {
     private char fit;
     private char gender;
-
-    /**
-     * @return the fit
-     */
+    
+    public Trouser(int itemID, String desc, char colourCode, double price, char fit, char gender) {
+    super(itemID, desc, colourCode, price);
+    this.fit = fit;
+    this.gender = gender;
+    }
+    
     public char getFit() {
         return fit;
     }
 
-    /**
-     * @param fit the fit to set
-     */
     public void setFit(char fit) {
         this.fit = fit;
     }
 
-    /**
-     * @return the gender
-     */
     public char getGender() {
         return gender;
     }
 
-    /**
-     * @param gender the gender to set
-     */
     public void setGender(char gender) {
         this.gender = gender;
     }

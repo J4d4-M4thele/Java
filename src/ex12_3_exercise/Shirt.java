@@ -20,3 +20,8 @@ public class Shirt extends Item{
        // Use a switch statement.  Return the color name. 
 
 }
+//In the Shirt class:
+//1.  Add a public getColor method that converts the colorCode field 
+//      into the corresponding color name (example: 'R' = "Red"). Include
+//      at least 3 colorCode/color combinations.  
+//2.  Use a switch statement in the method and return the color String.

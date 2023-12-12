@@ -16,6 +16,7 @@ import java.time.format.FormatStyle;
  * @author Jada
  */
 public class Lesson11 {
+
     public static void main(String[] args) {
 
 //        LocalDate myDate = LocalDate.now();
@@ -24,7 +25,6 @@ public class Lesson11 {
 //        System.out.println("The new date is " + newDate);
 //        JapaneseDate jDate = JapaneseDate.from(myDate);
 //        System.out.println("Today's date in Japan is " + jDate);
-        
 //        LocalDate today = LocalDate.now();
 //        System.out.println("Today's date (without formatting) is " + today);
 //        
@@ -33,9 +33,64 @@ public class Lesson11 {
 //        
 //        String fdate = today.format(DateTimeFormatter.ofLocalizedDate(FormatStyle.MEDIUM));
 //        System.out.println("Today's date (in Medium Localized format) is " + fdate);
+//        int[][] yearlySales;
+//        yearlySales = new int[5][4];
+//        yearlySales[0][0] = 1000;
+//        yearlySales[0][1] = 1500;
+//        yearlySales[0][2] = 1800;
+//        yearlySales[1][0] = 1000;
+//        yearlySales[3][3] = 2000;
+//******************WHILE LOOP*****************
+//        System.out.println("/*");
+//        int counter = 0;
+//        while(counter < 3) {
+//        System.out.println(" *");
+//        counter++;
+//        }
+//        System.out.println("/*");
+//******************FOR LOOP*****************
+//        for (int i = 0; i < 5; i++) {
+//            System.out.print("i = " + i + ";");
+//        }
+//        //converted to a while loop
+//        int i = 0;
+//        while(i < 5) {
+//        System.out.print("i = " + i + ";");
+//        i++;
+//        }
+//******************DO WHILE LOOP*****************
+//        factorial(5);
+//        factorial(10);
+//        String[] names = {"Jada", "Maadimo", "Hazel", "Lesego"};
+//        for (int idx = 0; idx < names.length; idx++) {
+//            if (names[idx].equalsIgnoreCase("Unavailable")) {
+//                continue;
+//            }
+//            System.out.println(names[idx]);
+//        }
+//******************NESTED WHILE LOOP*****************
+        String name = "Lenny";
+        String guess = "";
+        int attempts = 0;
+        while(!guess.equalsIgnoreCase(name)) {
+        guess = "";
+        while(guess.length() < name.length()) {
+        char ascliChar = (char) (Math.random() * 26 + 97);
+        guess += ascliChar;
+        
+        attempts++;
+        }
+            System.out.println(name + " found after " + attempts + " tries!");
 
-
-
+//******************NESTED FOR LOOP*****************
+//        int h = 4, w = 10;
+//
+//        for (int row = 0; row < h; row++) {
+//            for (int col = 0; col < w; col++) {
+//                System.out.print("@");
+//            }
+//            System.out.println();
+//        }
 //        int sales[][] = new int[3][4];
 //        int[][] salesArray = initArray(sales);
 //        System.out.println("Yearly sales by quarter beginning 2010:");
@@ -45,7 +100,6 @@ public class Lesson11 {
 //            }
 //            System.out.println();
 //        }
-
 //        ArrayList<String> names;
 //        names = new ArrayList();
 //        
@@ -66,14 +120,23 @@ public class Lesson11 {
 //        System.out.println(names);
     }
 
-    public static int[][] initArray(int[][] salesArray) {
-        int salesAmt = 100;
-        for (int outer = 0; outer < 3; outer++) {
-            for (int inner = 0; inner < 4; inner++) {
-                salesArray[outer][inner] = salesAmt++;
-            }
+//    public static int[][] initArray(int[][] salesArray) {
+//        int salesAmt = 100;
+//        for (int outer = 0; outer < 3; outer++) {
+//            for (int inner = 0; inner < 4; inner++) {
+//                salesArray[outer][inner] = salesAmt++;
+//            }
+//
+//        }
+//        return salesArray;
+//    }
 
-        }
-        return salesArray;
-    }
+//    static void factorial(int target) {
+//        int save = target;
+//        int fact = 1;
+//        do {
+//            fact *= target--;
+//        } while (target > 0);
+//        System.out.println("Factorial for " + save + ": " + fact);
+  }
 }

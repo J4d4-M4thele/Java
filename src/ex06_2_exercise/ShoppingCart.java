@@ -18,8 +18,8 @@ public class ShoppingCart {
         item02.desc = "Top Deck";   
         
         System.out.println("Item descriptions: ");
-        item01.displayItem();
-        item02.displayItem();
+//        item01.displayItem();
+//        item02.displayItem();
     }
 }
 

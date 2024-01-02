@@ -42,6 +42,8 @@ public class Lesson4 {
 
 //        int c = 25 - 5 * 4 / 2 - 10 + 4;
 //        System.out.println(c);
+
+        System.out.println("Hi");
     }
 
 }
